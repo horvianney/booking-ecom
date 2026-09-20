@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Polices DL AGENCY (charte graphique) ===== */
+@font-face {
+  font-family: "Creato Display";
+  src: url("./assets/fonts/CreatoDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./assets/fonts/CreatoDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./assets/fonts/CreatoDisplay-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./assets/fonts/CreatoDisplay-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Advent Pro";
+  src: url("./assets/fonts/AdventPro_UltraExpanded-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Advent Pro";
+  src: url("./assets/fonts/AdventPro_UltraExpanded-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Advent Pro";
+  src: url("./assets/fonts/AdventPro_UltraExpanded-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== Variables shadcn (thème sombre DL) ===== */
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 351 100% 37%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 351 100% 37%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 351 100% 45%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 351 100% 37%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 351 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Creato Display", "Arial Black", system-ui, sans-serif;
+    font-weight: 400;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
+/* ===== Utilitaires de marque ===== */
+.font-display {
+  font-family: "Creato Display", "Arial Black", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.font-advent {
+  font-family: "Advent Pro", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Cornell Red / accents de la charte */
+.text-brand {
+  color: #e10a17;
+}
+.text-brand-deep {
+  color: #b3001b;
+}
+.text-peach {
+  color: #fac9b8;
+}
+.text-sgbus {
+  color: #6bd425;
+}
+.text-dodger {
+  color: #1098f7;
+}
+
+/* Dégradé signature : du rouge sombre au rouge vif (charte) */
+.bg-brand-gradient {
+  background: linear-gradient(100deg, #561115 0%, #b3001b 55%, #e10a17 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(100deg, #b3001b 0%, #e10a17 60%, #ff4d57 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Bouton CTA signature */
+.btn-red {
+  background: linear-gradient(135deg, #e10a17 0%, #b3001b 100%);
+  color: #fff;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+    0 10px 30px -8px rgba(225, 10, 23, 0.55);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+  animation: cta-pulse 2.6s ease-in-out infinite;
+}
+.btn-red:hover {
+  transform: translateY(-2px) scale(1.02);
+  filter: brightness(1.12);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.18) inset,
+    0 16px 40px -8px rgba(225, 10, 23, 0.7);
+}
+@keyframes cta-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+      0 10px 30px -8px rgba(225, 10, 23, 0.55);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.18) inset,
+      0 10px 42px -6px rgba(225, 10, 23, 0.85);
+  }
+}
+
+/* Apparition au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Sécurité : si l'observer ne déclenche pas, tout s'affiche quand même */
+.reveal-force .reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* FAQ détails */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item[open] .faq-plus {
+  transform: rotate(45deg);
+}
+.faq-plus {
+  transition: transform 0.25s ease;
+}
+
+/* ===== Filigrane symbole BOOKING E-COM + pièces d'or ===== */
+.section-watermark {
+  position: relative;
+  overflow: hidden;
+}
+.section-watermark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 520px;
+  aspect-ratio: 1606 / 1309;
+  background-image: url("./assets/booking-symbol.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Pièce d'or décorative, côté opposé au symbole */
+.section-watermark::after {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  width: 120px;
+  aspect-ratio: 180 / 222;
+  background-image: url("./assets/coin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.5));
+}
+/* Le contenu reste toujours au-dessus du décor (sans écraser les positionnements absolus décoratifs) */
+.section-watermark > * {
+  z-index: 1;
+}
+.section-watermark > *:not([class~="absolute"]):not([class~="fixed"]):not([class~="sticky"]) {
+  position: relative;
+}
+.wm-right::before {
+  right: -160px;
+  transform: translateY(-50%);
+}
+.wm-left::before {
+  left: -160px;
+  transform: translateY(-50%) scaleX(-1);
+}
+.wm-right::after {
+  left: 3%;
+  transform: rotate(-12deg);
+}
+.wm-left::after {
+  right: 3%;
+  transform: rotate(12deg);
+}
+@media (max-width: 640px) {
+  /* Compacter les grands espaces vides entre sections sur mobile */
+  section.py-20 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  section.py-24 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .section-watermark::before {
+    width: 340px;
+    opacity: 0.12;
+  }
+  .wm-right::before {
+    right: -120px;
+  }
+  .wm-left::before {
+    left: -120px;
+  }
+  .section-watermark::after {
+    width: 56px;
+    bottom: 1%;
+    opacity: 0.75;
+  }
+}
