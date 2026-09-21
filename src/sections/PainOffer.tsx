@@ -14,7 +14,7 @@ const offer = [
   },
   {
     icon: "🏆",
-    title: "10+ produits gagnants inclus",
+    title: "+ de 10 produits gagnants inclus",
     desc: "Déjà ajoutés et optimisés dans ta boutique. Tu ne pars jamais de zéro : ta boutique arrive remplie, prête à vendre.",
   },
   {

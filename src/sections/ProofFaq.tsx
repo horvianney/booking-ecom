@@ -1,9 +1,9 @@
 import { Reveal } from "@/components/Reveal";
-import capture01 from "@/assets/capture-01.jpg";
-import capture02 from "@/assets/capture-02.jpg";
-import capture03 from "@/assets/capture-03.jpg";
-import capture04 from "@/assets/capture-04.jpg";
-import capture05 from "@/assets/capture-05.jpg";
+import capture01 from "@/assets/capture01.png";
+import capture02 from "@/assets/capture02.png";
+import capture03 from "@/assets/capture03.png";
+import capture04 from "@/assets/capture04.png";
+import capture05 from "@/assets/capture05.png";
 
 const captures = [
   { src: capture01, alt: "2,6 millions de FG générés en une journée" },
@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: "Et si je ne suis pas satisfait ?",
-    a: "Tu as 7 jours pour demander un remboursement intégral, sans justification. Zéro risque.",
+    a: "Tu as 90 jours pour demander un remboursement intégral, sans justification. Zéro risque.",
   },
   {
     q: "Les produits sont-ils inclus dans la boutique ?",
-    a: "Oui. Ta boutique arrive avec plus de 10 produits gagnants déjà ajoutés et les pages optimisées pour vendre.",
+    a: "Oui. Ta boutique arrive avec plus de + de 10 produits gagnants déjà ajoutés et les pages optimisées pour vendre.",
   },
   {
     q: "Combien de temps dure l'accompagnement ?",
@@ -73,13 +73,13 @@ export function Proof() {
                 href={c.src}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block overflow-hidden rounded-xl border border-white/10 shadow-[0_16px_50px_-20px_rgba(0,0,0,0.9)] transition duration-300 hover:-translate-y-1 hover:border-[#e10a17]/50"
+                className="block overflow-hidden rounded-xl  transition duration-300 hover:-translate-y-1"
               >
                 <img
                   src={c.src}
                   alt={c.alt}
                   loading="lazy"
-                  className="w-full object-cover"
+                  className=""
                 />
               </a>
             </Reveal>

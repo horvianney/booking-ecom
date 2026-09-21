@@ -64,7 +64,7 @@ export function Price() {
                 Oui, je veux ma boutique maintenant
               </CtaButton>
               <p className="font-advent mt-4 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500">
-                Mixx by Yas · Flooz · Autres moyens locaux · Garantie 7 jours
+                Mixx by Yas · Flooz · Autres moyens locaux · Garantie 90 jours
               </p>
             </div>
           </div>

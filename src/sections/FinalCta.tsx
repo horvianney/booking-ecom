@@ -23,10 +23,10 @@ export function FinalCta() {
             <span className="text-brand-gradient">prête demain.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-neutral-300">
-            Boutique Shopify brandée, 10 produits gagnants, formation complète
+            Boutique Shopify brandée, + de 10 produits gagnants, formation complète
             et 3 mois d'accompagnement — pour{" "}
             <strong className="text-white">29 900 FCFA</strong> au lieu de
-            550 000 FCFA. Garantie 7 jours, zéro risque.
+            550 000 FCFA. Garantie 90 jours, zéro risque.
           </p>
           <div className="mt-8">
             <CtaButton className="w-full sm:w-auto sm:px-10 sm:py-5 sm:text-lg">
@@ -34,7 +34,7 @@ export function FinalCta() {
             </CtaButton>
           </div>
           <p className="font-advent mt-5 text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500">
-            ⚡ Livraison rapide · 🛡 Garantie 7 jours · 🤝 Support inclus
+            ⚡ Livraison rapide · 🛡 Garantie 90 jours · 🤝 Support inclus
           </p>
         </Reveal>
       </div>

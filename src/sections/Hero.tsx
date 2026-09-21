@@ -39,7 +39,7 @@ export function Hero() {
               Pas de formation à 500 000 FCFA qui ne mène nulle part. Pas de
               semaines passées à configurer Shopify. Tu reçois ta boutique{" "}
               <strong className="text-white">brandée par nos experts</strong>,
-              avec <strong className="text-white">10+ produits gagnants</strong>{" "}
+              avec <strong className="text-white">+ de 10 produits gagnants</strong>{" "}
               — prête à te générer des revenus.
             </p>
           </Reveal>
@@ -63,7 +63,7 @@ export function Hero() {
                 <span className="text-[#6bd425]">✆</span> Support inclus
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="text-[#6bd425]">🛡</span> Garantie 7 jours
+                <span className="text-[#6bd425]">🛡</span> Garantie 90 jours
               </span>
             </div>
           </Reveal>
