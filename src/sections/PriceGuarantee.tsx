@@ -85,13 +85,12 @@ export function Guarantee() {
             </div>
             <div>
               <h2 className="font-display text-2xl uppercase">
-                Garantie <span className="text-sgbus">satisfait ou remboursé</span> — 7 jours
+                Garantie <span className="text-sgbus">satisfait ou remboursé</span> — 90 jours
               </h2>
               <p className="mt-3 text-neutral-300">
-                Tu rejoins Booking E-com sans stress. Si après 7 jours tu estimes
-                que le pack ne t'apporte pas de valeur, tu es remboursé
-                intégralement. Aucune question, aucun risque — juste une
-                opportunité à saisir maintenant.
+                Tu bénéficies d’une garantie satisfait ou remboursé pendant 90 jours.
+                Si, dans les 90 jours suivant la mise à disposition de ta boutique, tu n’as réalisé aucune vente sur ta boutique, tu peux demander le remboursement de ton achat, selon les conditions prévues par la garantie. et en bonus tu garde la boutique.
+                Tu as donc 3 mois pour te lancer, tester et avancer avec ta boutique, avec notre accompagnement.
               </p>
             </div>
           </div>
