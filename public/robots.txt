@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://booking-ecom.pages.dev/sitemap.xml

@@ -8,15 +8,15 @@ import { FinalCta, Footer } from "@/sections/FinalCta";
 
 export default function Home() {
   useEffect(() => {
+    document.title =
+      "Booking E-com Starter — Ta boutique Shopify clé en main (29 900 FCFA)";
     // Filet de sécurité : si l'IntersectionObserver n'a pas révélé des éléments
-    // déjà visibles à l'écran (navigateur ancien, rendu headless), on les force.
+    // (navigateur ancien, rendu headless, robot d'indexation), on les force tous.
     const t = window.setTimeout(() => {
       document
         .querySelectorAll<HTMLElement>(".reveal:not(.reveal-visible)")
         .forEach((el) => {
-          if (el.getBoundingClientRect().top < window.innerHeight) {
-            el.classList.add("reveal-visible");
-          }
+          el.classList.add("reveal-visible");
         });
     }, 2500);
     return () => window.clearTimeout(t);

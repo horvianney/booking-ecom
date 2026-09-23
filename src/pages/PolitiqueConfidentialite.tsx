@@ -1,8 +1,22 @@
+import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 import { StickyBar } from "@/components/Navbar";
 import { Footer } from "@/sections/FinalCta";
 
 export default function PolitiqueConfidentialite() {
+  useEffect(() => {
+    document.title =
+      "Politique de Confidentialité — Booking E-com Starter";
+    const t = window.setTimeout(() => {
+      document
+        .querySelectorAll<HTMLElement>(".reveal:not(.reveal-visible)")
+        .forEach((el) => {
+          el.classList.add("reveal-visible");
+        });
+    }, 2500);
+    return () => window.clearTimeout(t);
+  }, []);
+
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white antialiased">
       <StickyBar />

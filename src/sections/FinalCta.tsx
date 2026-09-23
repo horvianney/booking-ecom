@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 import bookingLogo from "@/assets/booking-logo-white.png";
@@ -55,9 +56,9 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-6 text-xs text-neutral-500">
           <span>© 2026 Booking E-com — Tous droits réservés</span>
-          <a href="/politique-confidentialite" className="hover:text-neutral-400 transition-colors">
+          <Link to="/politique-confidentialite" className="hover:text-neutral-400 transition-colors">
             Politique de confidentialité
-          </a>
+          </Link>
         </div>
         <p className="max-w-xl text-[10px] leading-relaxed text-neutral-600">
           Ce site n'est pas affilié à Shopify Inc. « Shopify » est une marque
