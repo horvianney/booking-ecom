@@ -9,11 +9,13 @@ export function CtaButton({
   href?: string;
   className?: string;
 }) {
+  // Les liens internes (#ancre) restent dans la page ;
+  // seuls les liens externes (https://…) s'ouvrent dans un nouvel onglet.
+  const external = href.startsWith("http");
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={`btn-red font-display inline-block rounded-xl px-7 py-4 text-center text-sm uppercase tracking-wide sm:text-base ${className}`}
     >
       {children}

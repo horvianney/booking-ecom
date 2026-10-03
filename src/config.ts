@@ -1,8 +1,9 @@
 // ============================================
 // CONFIGURATION BOOKING E-COM STARTER
-// CTA_URL = lien du formulaire de réservation Tally
+// CTA_URL = destination des boutons d'appel à l'action
+// ("#formulaire" = descend vers la section formulaire de la page)
 // ============================================
-export const CTA_URL = "https://tally.so/r/aQRopy";
+export const CTA_URL = "#formulaire";
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
 
