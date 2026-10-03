@@ -69,19 +69,15 @@ export function Proof() {
               delay={i * 100}
               className={i === 4 ? "lg:col-start-2" : ""}
             >
-              <a
-                href={c.src}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden rounded-xl  transition duration-300 hover:-translate-y-1"
-              >
+              <div className="overflow-hidden rounded-xl">
                 <img
                   src={c.src}
                   alt={c.alt}
                   loading="lazy"
-                  className=""
+                  className="pointer-events-none w-full select-none"
+                  draggable={false}
                 />
-              </a>
+              </div>
             </Reveal>
           ))}
         </div>
