@@ -7,6 +7,7 @@ import { Proof, Faq } from "@/sections/ProofFaq";
 import { VideoSection } from "@/sections/VideoSection";
 import { LeadForm } from "@/sections/LeadForm";
 import { FinalCta, Footer } from "@/sections/FinalCta";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export default function Home() {
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function Home() {
       <LeadForm />
       <FinalCta />
       <Footer />
+      <WhatsAppFloat />
     </main>
   );
 }

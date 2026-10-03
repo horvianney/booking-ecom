@@ -1,5 +1,6 @@
 import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
+import { PlacesBadge } from "@/components/PlacesBadge";
 import bookingLogo from "@/assets/booking-logo-white.png";
 import banner from "@/assets/banner-offre.jpg";
 
@@ -65,6 +66,11 @@ export function Hero() {
               <span className="flex items-center gap-1.5">
                 <span className="text-[#6bd425]">🛡</span> Garantie 90 jours
               </span>
+            </div>
+          </Reveal>
+          <Reveal delay={480}>
+            <div className="mt-6 flex justify-center">
+              <PlacesBadge />
             </div>
           </Reveal>
         </div>

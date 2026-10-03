@@ -1,5 +1,6 @@
 import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
+import { PlacesBadge } from "@/components/PlacesBadge";
 
 const stack = [
   { label: "Boutique Shopify brandée par nos experts", value: "150 000 FCFA" },
@@ -60,7 +61,10 @@ export function Price() {
               <p className="font-advent mt-2 text-xs font-medium uppercase tracking-[0.2em] text-[#e10a17]">
                 Prix de lancement — peut augmenter à tout moment
               </p>
-              <CtaButton className="mt-6 w-full sm:w-auto">
+              <div className="mt-5 flex justify-center">
+                <PlacesBadge />
+              </div>
+              <CtaButton className="mt-5 w-full sm:w-auto">
                 Oui, je veux ma boutique maintenant
               </CtaButton>
               <p className="font-advent mt-4 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500">
