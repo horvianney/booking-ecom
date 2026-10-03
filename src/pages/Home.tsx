@@ -8,6 +8,7 @@ import { VideoSection } from "@/sections/VideoSection";
 import { LeadForm } from "@/sections/LeadForm";
 import { FinalCta, Footer } from "@/sections/FinalCta";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { SocialProofToast } from "@/components/SocialProofToast";
 
 export default function Home() {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function Home() {
       <FinalCta />
       <Footer />
       <WhatsAppFloat />
+      <SocialProofToast />
     </main>
   );
 }
