@@ -16,7 +16,7 @@ export function WhatsAppFloat() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!WHATSAPP_NUMBER || WHATSAPP_NUMBER === "22800000000") return null;
+  if (!WHATSAPP_NUMBER) return null;
 
   const msg = encodeURIComponent(
     "Bonjour 👋 Je veux réserver ma place Booking E-com Starter (29 900 FCFA)."

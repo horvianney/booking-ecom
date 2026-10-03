@@ -9,11 +9,11 @@ export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
 
 // Numéro WhatsApp qui reçoit les réservations du formulaire (format international, sans + ni espaces)
 // Exemple Togo : "22890123456"
-export const WHATSAPP_NUMBER = "22800000000"; // TODO: remplacer par le vrai numéro
+export const WHATSAPP_NUMBER = "33745458435";
 
 // ID de la vidéo YouTube à intégrer sur la page (la partie après watch?v=)
 // Vide = la section vidéo ne s'affiche pas
-export const YOUTUBE_VIDEO_ID = ""; // TODO: ex. "dQw4w9WgXcQ"
+export const YOUTUBE_VIDEO_ID = "ssrHTWuIfrg";
 
 // URL du Google Apps Script (Web App) qui écrit les réponses dans Google Sheets
 // Vide = l'envoi vers Google Sheets est désactivé
