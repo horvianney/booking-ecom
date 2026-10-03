@@ -4,6 +4,8 @@ import { Hero } from "@/sections/Hero";
 import { Pain, Offer, Steps } from "@/sections/PainOffer";
 import { Price, Guarantee } from "@/sections/PriceGuarantee";
 import { Proof, Faq } from "@/sections/ProofFaq";
+import { VideoSection } from "@/sections/VideoSection";
+import { LeadForm } from "@/sections/LeadForm";
 import { FinalCta, Footer } from "@/sections/FinalCta";
 
 export default function Home() {
@@ -26,6 +28,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#0a0a0a] text-white antialiased">
       <StickyBar />
       <Hero />
+      <VideoSection />
       <Pain />
       <Offer />
       <Steps />
@@ -33,6 +36,7 @@ export default function Home() {
       <Guarantee />
       <Proof />
       <Faq />
+      <LeadForm />
       <FinalCta />
       <Footer />
     </main>

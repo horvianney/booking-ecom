@@ -5,3 +5,15 @@
 export const CTA_URL = "https://tally.so/r/aQRopy";
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
+
+// Numéro WhatsApp qui reçoit les réservations du formulaire (format international, sans + ni espaces)
+// Exemple Togo : "22890123456"
+export const WHATSAPP_NUMBER = "22800000000"; // TODO: remplacer par le vrai numéro
+
+// ID de la vidéo YouTube à intégrer sur la page (la partie après watch?v=)
+// Vide = la section vidéo ne s'affiche pas
+export const YOUTUBE_VIDEO_ID = ""; // TODO: ex. "dQw4w9WgXcQ"
+
+// URL du Google Apps Script (Web App) qui écrit les réponses dans Google Sheets
+// Vide = l'envoi vers Google Sheets est désactivé
+export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxNMzmXcMizHzTAz97dBRq1R0Y6voH85zyxe-lDF2qLQaZNlf6IGhq3sNONOhNWlW2W/exec";

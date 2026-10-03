@@ -101,7 +101,7 @@ export function Pain() {
 export function Offer() {
   return (
     <section id="offre" className="section-watermark wm-right relative py-20">
-      <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-[#561115]/50 blur-[110px]" />
+      <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-[#6bd425]/15 blur-[130px]" />
       <div className="relative mx-auto max-w-6xl px-4">
         <Reveal>
           <p className="font-advent text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#fac9b8]">
@@ -119,7 +119,7 @@ export function Offer() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {offer.map((o, i) => (
             <Reveal key={i} delay={i * 120}>
-              <div className="group h-full rounded-2xl border border-white/10 bg-[#101010] p-7 transition duration-300 hover:-translate-y-1.5 hover:border-[#e10a17]/60 hover:shadow-[0_20px_60px_-15px_rgba(179,0,27,0.4)]">
+              <div className="group h-full rounded-2xl border border-white/10 bg-[#101010] p-7 transition duration-300 hover:-translate-y-1.5 hover:border-[#6bd425]/50 hover:shadow-[0_20px_60px_-15px_rgba(107,212,37,0.25)]">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#b3001b]/20 text-2xl ring-1 ring-[#e10a17]/40">
                   {o.icon}
                 </div>
