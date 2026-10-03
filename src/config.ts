@@ -17,7 +17,7 @@ export const YOUTUBE_VIDEO_ID = "ssrHTWuIfrg";
 
 // URL du Google Apps Script (Web App) qui écrit les réponses dans Google Sheets
 // Vide = l'envoi vers Google Sheets est désactivé
-export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxNMzmXcMizHzTAz97dBRq1R0Y6voH85zyxe-lDF2qLQaZNlf6IGhq3sNONOhNWlW2W/exec";
+export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwuC0BjScqpe1ugGhZWZ6PXNQYFmPI22knD5_DN7AV8oKJNihfoZKkHfN4I-YogS9Cu/exec";
 
 // Nombre total de places de l'offre de lancement
 // Le compteur affiche PLACES_TOTAL - (nombre de lignes dans le Google Sheet)
