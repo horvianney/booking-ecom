@@ -98,6 +98,8 @@
   }
   html {
     scroll-behavior: smooth;
+    /* Décalage pour que les ancres (#prix, #formulaire…) ne passent pas sous la barre fixe */
+    scroll-padding-top: 70px;
   }
   html,
   body {
