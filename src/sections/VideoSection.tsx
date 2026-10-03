@@ -56,8 +56,8 @@ export function VideoSection() {
                     className="absolute inset-0 h-full w-full object-cover"
                   />
                   <span className="absolute inset-0 bg-black/30 transition group-hover:bg-black/20" />
-                  <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#e10a17] shadow-[0_10px_40px_rgba(225,10,23,0.5)] transition group-hover:scale-110 sm:h-20 sm:w-20">
-                    <svg viewBox="0 0 24 24" fill="white" className="ml-1 h-7 w-7 sm:h-9 sm:w-9">
+                  <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-lg ring-1 ring-black/10 transition group-hover:scale-110 sm:h-12 sm:w-12">
+                    <svg viewBox="0 0 24 24" fill="#e10a17" className="ml-0.5 h-4 w-4 sm:h-5 sm:w-5">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </span>
