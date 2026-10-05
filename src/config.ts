@@ -13,7 +13,7 @@ export const WHATSAPP_NUMBER = "33745458435";
 
 // ID de la vidéo YouTube à intégrer sur la page (la partie après watch?v=)
 // Vide = la section vidéo ne s'affiche pas
-export const YOUTUBE_VIDEO_ID = "ssrHTWuIfrg";
+export const YOUTUBE_VIDEO_ID = "ckNVFePmCHQ";
 
 // URL du Google Apps Script (Web App) qui écrit les réponses dans Google Sheets
 // Vide = l'envoi vers Google Sheets est désactivé
