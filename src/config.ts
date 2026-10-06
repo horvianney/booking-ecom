@@ -22,3 +22,51 @@ export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfyc
 // Nombre total de places de l'offre de lancement
 // Le compteur affiche PLACES_TOTAL - (nombre de lignes dans le Google Sheet)
 export const PLACES_TOTAL = 20;
+
+// Date limite du prix de lancement (compte à rebours affiché sur la page)
+// Format : "AAAA-MM-JJTHH:MM:SS" — modifiable à tout moment
+export const OFFER_DEADLINE = "2026-10-20T23:59:59";
+
+// ============================================
+// TÉMOIGNAGES (section photos)
+// photo : null = avatar avec initiales.
+// Pour ajouter une vraie photo : déposer le fichier dans public/temoignages/
+// (ex. temoignage-1.jpg) et remplacer null par "temoignage-1.jpg".
+// ⚠️ Textes génériques — à remplacer par vos vrais témoignages clients.
+// ============================================
+export const TESTIMONIALS: {
+  name: string;
+  city: string;
+  text: string;
+  result: string;
+  photo: string | null;
+}[] = [
+  {
+    name: "Marius A.",
+    city: "Cotonou",
+    text: "J'ai reçu ma boutique en 48h, déjà remplie avec les produits. Ma première vente est arrivée la semaine suivante. L'accompagnement fait vraiment toute la différence.",
+    result: "1ʳᵉ vente en 6 jours",
+    photo: null,
+  },
+  {
+    name: "Aïcha B.",
+    city: "Abidjan",
+    text: "Je n'y connaissais absolument rien en e-commerce. Les deux lives par semaine et le support 7j/7 m'ont permis de lancer ma première publicité sans stress.",
+    result: "Boutique lancée en 72h",
+    photo: null,
+  },
+  {
+    name: "Jean-Kevin M.",
+    city: "Douala",
+    text: "Le sourcing accompagné m'a évité des erreurs coûteuses avec les fournisseurs. Une équipe sérieuse, disponible, qui répond vite. Je recommande.",
+    result: "Sourcing Chine réussi",
+    photo: null,
+  },
+];
+
+// ============================================
+// TÉMOIGNAGES VIDÉO (section vidéos)
+// IDs YouTube (la partie après watch?v=). Vide = la section ne s'affiche pas.
+// Exemple : ["dQw4w9WgXcQ", "abc123xyz"]
+// ============================================
+export const YOUTUBE_TESTIMONIAL_IDS: string[] = [];

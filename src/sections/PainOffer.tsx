@@ -3,7 +3,7 @@ import { Reveal } from "@/components/Reveal";
 const pains = [
   "Tu as payé des formations chères… et tu n'as toujours pas de boutique en ligne.",
   "Tu as perdu des semaines sur Shopify, et ta boutique n'est toujours pas prête.",
-  "Tu as les idées, l'envie, l'ambition  mais la technique te bloque à chaque étape.",
+  "Tu as les idées, l'envie, l'ambition — mais la technique te bloque à chaque étape.",
 ];
 
 const offer = [
@@ -25,7 +25,7 @@ const offer = [
   {
     icon: "📦",
     title: "Sourcing accompagné",
-    desc: "On t'accompagne sur ton premier sourcing, avec l'appui de nos experts logistique  localement ou en Chine.",
+    desc: "On t'accompagne sur ton premier sourcing, avec l'appui de nos experts logistique — localement ou en Chine.",
   },
   {
     icon: "🚀",
@@ -53,7 +53,7 @@ const steps = [
   {
     n: "03",
     title: "On configure tout",
-    desc: "Produits, design, pages, réglages. Tu reçois ta boutique prête à vendre  et tes 3 mois d'accompagnement commencent.",
+    desc: "Produits, design, pages, réglages. Tu reçois ta boutique prête à vendre — et tes 3 mois d'accompagnement commencent.",
   },
 ];
 

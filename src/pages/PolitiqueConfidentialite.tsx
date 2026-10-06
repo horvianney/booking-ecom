@@ -6,7 +6,7 @@ import { Footer } from "@/sections/FinalCta";
 export default function PolitiqueConfidentialite() {
   useEffect(() => {
     document.title =
-      "Politique de Confidentialité  Booking E-com Starter";
+      "Politique de Confidentialité — Booking E-com Starter";
     const t = window.setTimeout(() => {
       document
         .querySelectorAll<HTMLElement>(".reveal:not(.reveal-visible)")

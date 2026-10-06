@@ -46,15 +46,15 @@ export function LeadForm() {
 
     // Mode 2 (secours) : réception via WhatsApp avec message pré-rempli
     const lines = [
-      "🔥 NOUVELLE RÉSERVATION  Booking E-com Starter",
+      "🔥 NOUVELLE RÉSERVATION — Booking E-com Starter",
       "",
       `👤 Nom & prénom : ${nom}`,
       `🎂 Âge : ${age} ans`,
       `⚧ Sexe : ${sexe}`,
       `📱 WhatsApp : ${whatsapp}`,
-      `📞 Appel : ${appel || ""}`,
+      `📞 Appel : ${appel || "—"}`,
       `🛒 Expérience e-commerce : ${experience}`,
-      `🌐 Réseau le plus actif : ${reseau || ""}`,
+      `🌐 Réseau le plus actif : ${reseau || "—"}`,
     ];
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener,noreferrer");
@@ -74,8 +74,8 @@ export function LeadForm() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-neutral-400">
             {GOOGLE_SHEET_WEBAPP_URL
-              ? "Remplis ce formulaire  on te recontacte très vite pour finaliser ta commande."
-              : "Remplis ce formulaire  ta demande arrive directement sur notre WhatsApp et on te recontacte pour finaliser ta commande."}
+              ? "Remplis ce formulaire — on te recontacte très vite pour finaliser ta commande."
+              : "Remplis ce formulaire — ta demande arrive directement sur notre WhatsApp et on te recontacte pour finaliser ta commande."}
           </p>
         </Reveal>
 
@@ -220,7 +220,7 @@ export function LeadForm() {
             <p className="text-center text-[11px] leading-relaxed text-neutral-500">
               {GOOGLE_SHEET_WEBAPP_URL
                 ? "Tes informations restent confidentielles et ne servent qu'à te recontacter."
-                : "En envoyant, WhatsApp s'ouvre avec ton message pré-rempli  il ne te reste qu'à appuyer sur « Envoyer »."}
+                : "En envoyant, WhatsApp s'ouvre avec ton message pré-rempli — il ne te reste qu'à appuyer sur « Envoyer »."}
             </p>
           </form>
           )}

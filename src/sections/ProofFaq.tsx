@@ -7,8 +7,8 @@ import capture05 from "@/assets/capture05.png";
 
 const captures = [
   { src: capture01, alt: "2,6 millions de FG générés en une journée" },
-  { src: capture02, alt: "Résultats e-commerce  capture 2" },
-  { src: capture03, alt: "Résultats e-commerce  capture 3" },
+  { src: capture02, alt: "Résultats e-commerce — capture 2" },
+  { src: capture03, alt: "Résultats e-commerce — capture 3" },
   { src: capture04, alt: "+ de 5 millions de FCFA en 03 mois" },
   { src: capture05, alt: "+ de 2 millions de FCFA en 30 jours" },
 ];
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "Combien de temps dure l'accompagnement ?",
-    a: "3 mois complets : 2 lives de formation et de suivi par semaine (Google Meet), plus un support disponible 7j/7 pour t'aider à surmonter tes blocages  du sourcing jusqu'à ton premier lancement publicitaire.",
+    a: "3 mois complets : 2 lives de formation et de suivi par semaine (Google Meet), plus un support disponible 7j/7 pour t'aider à surmonter tes blocages — du sourcing jusqu'à ton premier lancement publicitaire.",
   },
   {
     q: "Je n'y connais rien au sourcing, vous m'aidez ?",

@@ -4,7 +4,7 @@ import { defineConfig } from "vite"
 import { viteSingleFile } from "vite-plugin-singlefile"
 
 // Build spécial : tout le site (JS, CSS, polices, images) est compilé
-// dans UN SEUL index.html  la personne qui le reçoit n'a qu'à
+// dans UN SEUL index.html — la personne qui le reçoit n'a qu'à
 // double-cliquer dessus pour voir la page, sans serveur ni hébergement.
 export default defineConfig({
   base: "./",

@@ -25,13 +25,13 @@ export function FinalCta() {
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-neutral-300">
             Boutique Shopify brandée, + de 10 produits gagnants, formation complète
-            et 3 mois d'accompagnement  pour{" "}
+            et 3 mois d'accompagnement — pour{" "}
             <strong className="text-white">29 900 FCFA</strong> au lieu de
             550 000 FCFA. Garantie 90 jours, zéro risque.
           </p>
           <div className="mt-8">
             <CtaButton className="w-full sm:w-auto sm:px-10 sm:py-5 sm:text-lg">
-              Je veux ma boutique  29 900 FCFA
+              Je veux ma boutique — 29 900 FCFA
             </CtaButton>
           </div>
           <p className="font-advent mt-5 text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500">
@@ -55,7 +55,7 @@ export function Footer() {
           />
         </div>
         <div className="flex items-center gap-6 text-xs text-neutral-500">
-          <span>© 2026 Booking E-com  Tous droits réservés</span>
+          <span>© 2026 Booking E-com — Tous droits réservés</span>
           <Link to="/politique-confidentialite" className="hover:text-neutral-400 transition-colors">
             Politique de confidentialité
           </Link>
