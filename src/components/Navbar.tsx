@@ -25,14 +25,14 @@ export function StickyBar() {
           <div className="flex items-center gap-2 sm:gap-3">
             <p className="text-[11px] font-bold uppercase tracking-wider text-neutral-200 sm:text-xs">
               <span className="hidden text-[#e10a17] sm:inline">
-                Offre de lancement —{" "}
+                Offre de lancement {" "}
               </span>
               <span className="hidden line-through decoration-[#e10a17]/70 sm:inline">
                 500 000 FCFA{" "}
               </span>
               <span className="hidden text-[#fac9b8] min-[420px]:inline">29 900 FCFA</span>
             </p>
-            {/* Compteur de places — visible en permanence */}
+            {/* Compteur de places  visible en permanence */}
             <a
               href="#formulaire"
               className="flex shrink-0 items-center gap-1.5 rounded-full border border-[#e10a17]/50 bg-[#b3001b]/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-[#fac9b8] transition hover:bg-[#b3001b]/30 sm:px-3 sm:text-[11px]"

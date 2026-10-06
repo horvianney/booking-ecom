@@ -41,7 +41,7 @@ export function Hero() {
               semaines passées à configurer Shopify. Tu reçois ta boutique{" "}
               <strong className="text-white">brandée par nos experts</strong>,
               avec <strong className="text-white">+ de 10 produits gagnants</strong>{" "}
-              — prête à te générer des revenus.
+               prête à te générer des revenus.
             </p>
           </Reveal>
           <Reveal delay={320}>
@@ -58,7 +58,7 @@ export function Hero() {
           <Reveal delay={400}>
             <div className="font-advent mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium uppercase tracking-[0.15em] text-neutral-400">
               <span className="flex items-center gap-1.5">
-                <span className="text-[#6bd425]">⚡</span> Livraison rapide
+                <span className="text-[#6bd425]">⚡</span> Accès rapide
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="text-[#6bd425]">✆</span> Support inclus
@@ -81,7 +81,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)] max-sm:-ml-[4%] max-sm:w-[108%]">
               <img
                 src={banner}
-                alt="Offre unique Booking E-com Starter — 29 900 XOF au lieu de 550 000 XOF, offre limitée à 20 places"
+                alt="Offre unique Booking E-com Starter  29 900 XOF au lieu de 550 000 XOF, offre limitée à 20 places"
                 className="w-full object-cover"
                 loading="eager"
               />

@@ -13,7 +13,7 @@ import { SocialProofToast } from "@/components/SocialProofToast";
 export default function Home() {
   useEffect(() => {
     document.title =
-      "Booking E-com Starter — Ta boutique Shopify clé en main (29 900 FCFA)";
+      "Booking E-com Starter  Ta boutique Shopify clé en main (29 900 FCFA)";
     // Filet de sécurité : si l'IntersectionObserver n'a pas révélé des éléments
     // (navigateur ancien, rendu headless, robot d'indexation), on les force tous.
     const t = window.setTimeout(() => {

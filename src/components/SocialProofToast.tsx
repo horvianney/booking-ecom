@@ -46,7 +46,7 @@ function randomToast(): Toast {
 }
 
 /**
- * Notifications de preuve sociale (simulées) — bas gauche.
+ * Notifications de preuve sociale (simulées)  bas gauche.
  * Première apparition après 6 s, puis toutes les 10 s, visible 5 s.
  */
 export function SocialProofToast() {
