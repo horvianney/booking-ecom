@@ -58,7 +58,7 @@ export function Price() {
                   <span className="flex items-center gap-3 text-neutral-200">
                     <span className="text-[#6bd425]">✓</span> {s.label}
                   </span>
-                  <span className="whitespace-nowrap text-sm text-neutral-500 line-through">
+                  <span className="font-display inline-block w-32 whitespace-nowrap rounded-lg bg-[linear-gradient(135deg,#e10a17_0%,#b3001b_100%)] px-3 py-1.5 text-center text-sm text-white shadow-[0_6px_20px_-6px_rgba(225,10,23,0.5)] sm:w-36 sm:text-base">
                     {s.value}
                   </span>
                 </div>

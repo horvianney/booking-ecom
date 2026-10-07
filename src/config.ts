@@ -23,9 +23,9 @@ export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfyc
 // Le compteur affiche PLACES_TOTAL - (nombre de lignes dans le Google Sheet)
 export const PLACES_TOTAL = 20;
 
-// Date limite du prix de lancement (compte à rebours affiché sur la page)
-// Format : "AAAA-MM-JJTHH:MM:SS" - modifiable à tout moment
-export const OFFER_DEADLINE = "2026-10-20T23:59:59";
+// Durée du compte à rebours affiché sur la page (en heures)
+// Quand il arrive à zéro, il recommence automatiquement.
+export const COUNTDOWN_HOURS = 3;
 
 // ============================================
 // TÉMOIGNAGES (section photos)

@@ -47,10 +47,10 @@ export function Hero() {
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <CtaButton>Obtenir mon pack maintenant</CtaButton>
               <a
-                href="#offre"
+                href="#video"
                 className="text-sm font-semibold text-neutral-400 underline-offset-4 transition hover:text-[#fac9b8] hover:underline"
               >
-                Voir ce que contient le pack ↓
+                Voir la vidéo de présentation ↓
               </a>
             </div>
           </Reveal>
