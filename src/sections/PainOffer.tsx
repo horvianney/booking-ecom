@@ -42,18 +42,18 @@ const offer = [
 const steps = [
   {
     n: "01",
-    title: "Tu commandes",
-    desc: "Tu paies 29 900 FCFA via mobile money (Mixx by Yas, Flooz…) et tu nous confirmes ta commande.",
+    title: "Réservez votre boutique",
+    desc: "Remplissez le formulaire et effectuez votre paiement sécurisé.",
   },
   {
     n: "02",
-    title: "Tu nous envoies ta boutique",
-    desc: "Tu as déjà une boutique ? Parfait. Tu n'en as pas ? On t'aide à la créer, étape par étape.",
+    title: "Nous préparons votre boutique",
+    desc: "Notre équipe configure votre boutique et intègre les éléments prévus dans votre offre.",
   },
   {
     n: "03",
-    title: "On configure tout",
-    desc: "Produits, design, pages, réglages. Tu reçois ta boutique prête à vendre  et tes 3 mois d'accompagnement commencent.",
+    title: "Recevez & commencez",
+    desc: "Recevez votre boutique et bénéficiez de votre accompagnement pour commencer à l'exploiter.",
   },
 ];
 

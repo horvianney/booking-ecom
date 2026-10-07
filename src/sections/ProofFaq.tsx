@@ -4,9 +4,13 @@ import capture02 from "@/assets/capture02.png";
 import capture03 from "@/assets/capture03.png";
 import capture04 from "@/assets/capture04.png";
 import capture05 from "@/assets/capture05.png";
+import capture06 from "@/assets/capture06.png";
+import capture07 from "@/assets/capture07.png";
 
 const captures = [
   { src: capture01, alt: "2,6 millions de FG générés en une journée" },
+  { src: capture06, alt: "610 000 FCFA générés en 5 jours ouvrés" },
+  { src: capture07, alt: "2,1 millions de FCFA générés en 30 jours" },
   { src: capture02, alt: "Résultats e-commerce  capture 2" },
   { src: capture03, alt: "Résultats e-commerce  capture 3" },
   { src: capture04, alt: "+ de 5 millions de FCFA en 03 mois" },

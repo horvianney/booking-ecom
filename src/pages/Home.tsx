@@ -34,6 +34,7 @@ export default function Home() {
       <StickyBar />
       <Hero />
       <VideoSection />
+      <LeadForm />
       <Pain />
       <Offer />
       <Steps />
@@ -44,7 +45,6 @@ export default function Home() {
       <Testimonials />
       <VideoTestimonials />
       <Faq />
-      <LeadForm />
       <FinalCta />
       <Footer />
       <WhatsAppFloat />

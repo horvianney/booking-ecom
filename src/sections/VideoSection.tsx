@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
+import { CtaButton } from "@/components/CtaButton";
 import { YOUTUBE_VIDEO_ID } from "@/config";
 
 /**
@@ -28,6 +29,15 @@ export function VideoSection() {
           <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-400">
             Tout ce que contient le Booking E-com Starter, expliqué en quelques minutes.
           </p>
+          <div className="mx-auto mt-6 max-w-2xl rounded-xl border border-[#e10a17]/40 bg-[#b3001b]/10 px-5 py-4 text-center">
+            <p className="text-sm leading-relaxed text-neutral-200 sm:text-base">
+              Boutique Shopify brandée, + de 10 produits gagnants, formation
+              complète et 3 mois d'accompagnement pour{" "}
+              <strong className="text-white">29 900 FCFA</strong> au lieu de{" "}
+              <span className="line-through decoration-[#e10a17]">550 000 FCFA</span>.
+              {" "}Garantie 90 jours, zéro risque.
+            </p>
+          </div>
         </Reveal>
 
         <Reveal delay={150}>
@@ -64,6 +74,14 @@ export function VideoSection() {
                 </button>
               )}
             </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={250}>
+          <div className="mt-8 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je réserve ma place maintenant
+            </CtaButton>
           </div>
         </Reveal>
       </div>

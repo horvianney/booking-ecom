@@ -2,6 +2,7 @@ import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 import { PlacesBadge } from "@/components/PlacesBadge";
 import { Countdown } from "@/components/Countdown";
+import banner from "@/assets/banner-offre.jpg";
 
 const stack = [
   { label: "Boutique Shopify brandée par nos experts", value: "150 000 FCFA" },
@@ -25,6 +26,20 @@ export function Price() {
             Tout ce que tu reçois{" "}
             <span className="text-brand-gradient">aujourd'hui</span>
           </h2>
+        </Reveal>
+
+        <Reveal delay={60}>
+          <div className="relative mx-auto mt-10">
+            <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_40%,rgba(179,0,27,0.25),transparent_65%)] blur-xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
+              <img
+                src={banner}
+                alt="Offre unique Booking E-com Starter  29 900 FCFA au lieu de 550 000 FCFA, offre limitée à 20 places"
+                className="w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </Reveal>
 
         <Reveal delay={120}>

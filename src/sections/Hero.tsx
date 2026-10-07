@@ -2,7 +2,6 @@ import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 import { PlacesBadge } from "@/components/PlacesBadge";
 import bookingLogo from "@/assets/booking-logo-white.png";
-import banner from "@/assets/banner-offre.jpg";
 
 export function Hero() {
   return (
@@ -74,20 +73,6 @@ export function Hero() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal delay={300}>
-          <div className="relative mx-auto mt-12 max-w-4xl">
-            <div className="pointer-events-none absolute -inset-5 rounded-3xl bg-[radial-gradient(circle_at_50%_40%,rgba(179,0,27,0.3),transparent_65%)] blur-xl" />
-            <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)] max-sm:-ml-[4%] max-sm:w-[108%]">
-              <img
-                src={banner}
-                alt="Offre unique Booking E-com Starter  29 900 XOF au lieu de 550 000 XOF, offre limitée à 20 places"
-                className="w-full object-cover"
-                loading="eager"
-              />
-            </div>
-          </div>
-        </Reveal>
       </div>
     </header>
   );

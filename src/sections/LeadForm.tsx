@@ -70,11 +70,12 @@ export function LeadForm() {
             Formulaire de réservation
           </p>
           <h2 className="font-display mt-4 text-center text-3xl uppercase sm:text-4xl">
-            Réserve <span className="text-brand-gradient">ta place</span> maintenant
+            Réserve ta place et{" "}
+            <span className="text-brand-gradient">passe au paiement</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-neutral-400">
             {GOOGLE_SHEET_WEBAPP_URL
-              ? "Remplis ce formulaire  on te recontacte très vite pour finaliser ta commande."
+              ? "Remplis tes informations. On te recontacte immédiatement sur WhatsApp pour le paiement sécurisé et finaliser ta réservation."
               : "Remplis ce formulaire  ta demande arrive directement sur notre WhatsApp et on te recontacte pour finaliser ta commande."}
           </p>
         </Reveal>
@@ -215,11 +216,11 @@ export function LeadForm() {
               type="submit"
               className="btn-red font-display block w-full rounded-xl px-7 py-4 text-center text-sm uppercase tracking-wide sm:text-base"
             >
-              Envoyer ma réservation →
+              👉 Réserver et passer au paiement
             </button>
             <p className="text-center text-[11px] leading-relaxed text-neutral-500">
               {GOOGLE_SHEET_WEBAPP_URL
-                ? "Tes informations restent confidentielles et ne servent qu'à te recontacter."
+                ? "🔒 Paiement sécurisé • Réservation confirmée après paiement • Tes informations restent confidentielles."
                 : "En envoyant, WhatsApp s'ouvre avec ton message pré-rempli  il ne te reste qu'à appuyer sur « Envoyer »."}
             </p>
           </form>
