@@ -27,36 +27,41 @@ export function WhoFor() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          <Reveal delay={100}>
-            <div className="h-full rounded-2xl border border-[#6bd425]/30 bg-[#6bd425]/5 p-7">
-              <h3 className="font-display flex items-center gap-2 text-lg uppercase text-[#6bd425]">
+        {/* Un seul bloc, divisé en deux moitiés côte à côte (mobile inclus) */}
+        <Reveal delay={100}>
+          <div className="mt-12 grid grid-cols-2 divide-x divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-[#0e0e0e]">
+            <div className="bg-[#6bd425]/10 p-4 sm:p-7">
+              <h3 className="font-display flex items-center gap-1.5 text-[13px] uppercase leading-tight text-[#6bd425] sm:gap-2 sm:text-lg">
                 <span>✅</span> C'est fait pour toi si…
               </h3>
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-4 space-y-2.5 sm:mt-5 sm:space-y-3">
                 {pourToi.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-neutral-200">
-                    <span className="mt-0.5 text-[#6bd425]">✓</span> {item}
+                  <li
+                    key={i}
+                    className="flex items-start gap-2 text-[11px] leading-snug text-neutral-200 sm:gap-3 sm:text-sm sm:leading-relaxed"
+                  >
+                    <span className="mt-0.5 shrink-0 text-[#6bd425]">✓</span> {item}
                   </li>
                 ))}
               </ul>
             </div>
-          </Reveal>
-          <Reveal delay={200}>
-            <div className="h-full rounded-2xl border border-[#e10a17]/30 bg-[#b3001b]/5 p-7">
-              <h3 className="font-display flex items-center gap-2 text-lg uppercase text-[#ff6b6b]">
+            <div className="bg-[#b3001b]/10 p-4 sm:p-7">
+              <h3 className="font-display flex items-center gap-1.5 text-[13px] uppercase leading-tight text-[#ff6b6b] sm:gap-2 sm:text-lg">
                 <span>❌</span> Ce n'est PAS pour toi si…
               </h3>
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-4 space-y-2.5 sm:mt-5 sm:space-y-3">
                 {pasPourToi.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-neutral-300">
-                    <span className="mt-0.5 text-[#e10a17]">✗</span> {item}
+                  <li
+                    key={i}
+                    className="flex items-start gap-2 text-[11px] leading-snug text-neutral-300 sm:gap-3 sm:text-sm sm:leading-relaxed"
+                  >
+                    <span className="mt-0.5 shrink-0 text-[#e10a17]">✗</span> {item}
                   </li>
                 ))}
               </ul>
             </div>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

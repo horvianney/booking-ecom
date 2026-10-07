@@ -237,7 +237,7 @@
   position: absolute;
   bottom: 5%;
   width: 120px;
-  aspect-ratio: 180 / 222;
+  aspect-ratio: 1 / 1;
   background-image: url("./assets/coin.png");
   background-size: contain;
   background-repeat: no-repeat;

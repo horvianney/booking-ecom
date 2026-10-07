@@ -31,7 +31,7 @@ export function Price() {
           <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-[#0e0e0e] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]">
             <div className="bg-brand-gradient px-6 py-4">
               <p className="font-display text-center text-sm uppercase tracking-widest text-white">
-                Booking E-com Starter — Accès complet
+                Booking E-com Starter  Accès complet
               </p>
             </div>
             <div className="divide-y divide-white/5 px-6">
@@ -60,7 +60,7 @@ export function Price() {
                 29 900 <span className="text-2xl">FCFA</span>
               </p>
               <p className="font-advent mt-2 text-xs font-medium uppercase tracking-[0.2em] text-[#e10a17]">
-                Prix de lancement — peut augmenter à tout moment
+                Prix de lancement  peut augmenter à tout moment
               </p>
               <div className="mt-5 flex justify-center">
                 <PlacesBadge />
@@ -91,7 +91,7 @@ export function Guarantee() {
             </div>
             <div>
               <h2 className="font-display text-2xl uppercase">
-                Garantie <span className="text-sgbus">satisfait ou remboursé</span> — 90 jours
+                Garantie <span className="text-sgbus">satisfait ou remboursé</span>  90 jours
               </h2>
               <p className="mt-3 text-neutral-300">
                 Tu bénéficies d’une garantie satisfait ou remboursé pendant 90 jours.

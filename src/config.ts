@@ -24,7 +24,7 @@ export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfyc
 export const PLACES_TOTAL = 20;
 
 // Date limite du prix de lancement (compte à rebours affiché sur la page)
-// Format : "AAAA-MM-JJTHH:MM:SS" — modifiable à tout moment
+// Format : "AAAA-MM-JJTHH:MM:SS" - modifiable à tout moment
 export const OFFER_DEADLINE = "2026-10-20T23:59:59";
 
 // ============================================
@@ -32,7 +32,7 @@ export const OFFER_DEADLINE = "2026-10-20T23:59:59";
 // photo : null = avatar avec initiales.
 // Pour ajouter une vraie photo : déposer le fichier dans public/temoignages/
 // (ex. temoignage-1.jpg) et remplacer null par "temoignage-1.jpg".
-// ⚠️ Textes génériques — à remplacer par vos vrais témoignages clients.
+// ⚠️ Textes génériques - à remplacer par vos vrais témoignages clients.
 // ============================================
 export const TESTIMONIALS: {
   name: string;
