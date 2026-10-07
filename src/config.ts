@@ -17,11 +17,16 @@ export const YOUTUBE_VIDEO_ID = "ckNVFePmCHQ";
 
 // URL du Google Apps Script (Web App) qui écrit les réponses dans Google Sheets
 // Vide = l'envoi vers Google Sheets est désactivé
-export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwuC0BjScqpe1ugGhZWZ6PXNQYFmPI22knD5_DN7AV8oKJNihfoZKkHfN4I-YogS9Cu/exec";
+export const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbxhL9CAvalQ0ff5ei1E_V39zuKFhEflphRdD1VRGcJL13TJOcXxz-pczu_xT6IbnZHsXg/exec";
 
 // Nombre total de places de l'offre de lancement
 // Le compteur affiche PLACES_TOTAL - (nombre de lignes dans le Google Sheet)
 export const PLACES_TOTAL = 20;
+
+// Lignes déjà présentes dans le Sheet au moment du branchement
+// (anciennes réservations copiées depuis l'ancien fichier) :
+// le compteur les ignore et ne compte que les NOUVELLES réservations.
+export const PLACES_COUNTER_OFFSET = 36;
 
 // Durée du compte à rebours affiché sur la page (en heures)
 // Quand il arrive à zéro, il recommence automatiquement.

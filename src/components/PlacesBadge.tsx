@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GOOGLE_SHEET_WEBAPP_URL, PLACES_TOTAL } from "@/config";
+import { GOOGLE_SHEET_WEBAPP_URL, PLACES_TOTAL, PLACES_COUNTER_OFFSET } from "@/config";
 
 /**
  * Compteur de places restantes.
@@ -22,7 +22,10 @@ export function usePlacesRestantes(): number {
       });
   }, []);
 
-  return Math.max(PLACES_TOTAL - pris, 0);
+  // On ignore les PLACES_COUNTER_OFFSET lignes déjà présentes au branchement
+  // (anciennes réservations) : seules les nouvelles font baisser le compteur.
+  const nouvelles = Math.max(pris - PLACES_COUNTER_OFFSET, 0);
+  return Math.max(PLACES_TOTAL - nouvelles, 0);
 }
 
 export function PlacesBadge({ className = "" }: { className?: string }) {
