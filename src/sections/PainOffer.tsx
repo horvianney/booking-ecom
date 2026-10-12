@@ -1,3 +1,4 @@
+import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 
 const pains = [
@@ -14,7 +15,7 @@ const offer = [
   },
   {
     icon: "🏆",
-    title: "+ de 10 produits gagnants inclus",
+    title: "+ de 10 produits qui marchent inclus",
     desc: "Déjà ajoutés et optimisés dans ta boutique. Tu ne pars jamais de zéro : ta boutique arrive remplie, prête à vendre.",
   },
   {
@@ -93,6 +94,13 @@ export function Pain() {
             </p>
           </div>
         </Reveal>
+        <Reveal delay={350}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je passe à l'action maintenant
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -119,7 +127,10 @@ export function Offer() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {offer.map((o, i) => (
             <Reveal key={i} delay={i * 120}>
-              <div className="group h-full rounded-2xl border border-white/10 bg-[#101010] p-7 transition duration-300 hover:-translate-y-1.5 hover:border-[#6bd425]/50 hover:shadow-[0_20px_60px_-15px_rgba(107,212,37,0.25)]">
+              <div className="group relative h-full rounded-2xl border border-white/10 bg-[#101010] p-7 transition duration-300 hover:-translate-y-1.5 hover:border-[#6bd425]/50 hover:shadow-[0_20px_60px_-15px_rgba(107,212,37,0.25)]">
+                <span className="font-display absolute right-5 top-4 text-xl text-white/15 transition group-hover:text-[#6bd425]/50">
+                  0{i + 1}
+                </span>
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#b3001b]/20 text-2xl ring-1 ring-[#e10a17]/40">
                   {o.icon}
                 </div>
@@ -133,6 +144,13 @@ export function Offer() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Oui, je veux tout ça à 29 900 FCFA
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -170,6 +188,13 @@ export function Steps() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je réserve ma boutique
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

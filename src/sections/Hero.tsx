@@ -1,7 +1,7 @@
-import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
-import { PlacesBadge } from "@/components/PlacesBadge";
 import bookingLogo from "@/assets/booking-logo-white.png";
+// import { CtaButton } from "@/components/CtaButton";
+// import { PlacesBadge } from "@/components/PlacesBadge";
 
 export function Hero() {
   return (
@@ -39,11 +39,11 @@ export function Hero() {
               Pas de formation à 500 000 FCFA qui ne mène nulle part. Pas de
               semaines passées à configurer Shopify. Tu reçois ta boutique{" "}
               <strong className="text-white">brandée par nos experts</strong>,
-              avec <strong className="text-white">+ de 10 produits gagnants</strong>{" "}
+              avec <strong className="text-white">+ de 10 produits qui marchent</strong>{" "}
                prête à te générer des revenus.
             </p>
           </Reveal>
-          <Reveal delay={320}>
+          {/* <Reveal delay={320}>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <CtaButton>Obtenir mon pack maintenant</CtaButton>
               <a
@@ -71,7 +71,7 @@ export function Hero() {
             <div className="mt-6 flex justify-center">
               <PlacesBadge />
             </div>
-          </Reveal>
+          </Reveal> */}
         </div>
       </div>
     </header>

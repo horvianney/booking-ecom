@@ -24,7 +24,7 @@ export function FinalCta() {
             <span className="text-brand-gradient">prête demain.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-neutral-300">
-            Boutique Shopify brandée, + de 10 produits gagnants, formation complète
+            Boutique Shopify brandée, + de 10 produits qui marchent, formation complète
             et 3 mois d'accompagnement  pour{" "}
             <strong className="text-white">29 900 FCFA</strong> au lieu de
             550 000 FCFA. Garantie 90 jours, zéro risque.

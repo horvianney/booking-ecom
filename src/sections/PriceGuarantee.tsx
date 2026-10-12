@@ -6,7 +6,7 @@ import banner from "@/assets/banner-offre.jpg";
 
 const stack = [
   { label: "Boutique Shopify brandée par nos experts", value: "150 000 FCFA" },
-  { label: "10+ produits gagnants ajoutés", value: "50 000 FCFA" },
+  { label: "10+ produits qui marchent ajoutés", value: "50 000 FCFA" },
   { label: "Formation complète e-commerce Afrique", value: "100 000 FCFA" },
   { label: "Sourcing accompagné (local / Chine)", value: "75 000 FCFA" },
   { label: "Visuels publicitaires Facebook", value: "75 000 FCFA" },
@@ -58,17 +58,20 @@ export function Price() {
                   <span className="flex items-center gap-3 text-neutral-200">
                     <span className="text-[#6bd425]">✓</span> {s.label}
                   </span>
-                  <span className="font-display inline-block w-32 whitespace-nowrap rounded-lg bg-[linear-gradient(135deg,#e10a17_0%,#b3001b_100%)] px-3 py-1.5 text-center text-sm text-white shadow-[0_6px_20px_-6px_rgba(225,10,23,0.5)] sm:w-36 sm:text-base">
-                    {s.value}
+                  <span className="font-display inline-flex w-48 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg bg-[linear-gradient(135deg,#e10a17_0%,#b3001b_100%)] px-3 py-1.5 text-sm text-white shadow-[0_6px_20px_-6px_rgba(225,10,23,0.5)] sm:w-52 sm:text-base">
+                    Valeur : {s.value}
                   </span>
                 </div>
               ))}
             </div>
             <div className="border-t border-dashed border-white/15 px-6 py-6 text-center">
               <p className="text-sm uppercase tracking-wide text-neutral-400">
-                Valeur totale :{" "}
-                <span className="line-through decoration-[#e10a17] decoration-2">
+                Valeur totale réelle
+              </p>
+              <p className="font-display mt-1 text-3xl text-white sm:text-4xl">
+                <span className="relative inline-block px-1">
                   550 000 FCFA
+                  <span className="absolute -left-[6%] top-1/2 h-[3px] w-[112%] -translate-y-1/2 -rotate-6 rounded bg-[#e10a17] shadow-[0_0_14px_rgba(225,10,23,0.8)]" />
                 </span>
               </p>
               <p className="font-display mt-3 text-5xl text-peach sm:text-6xl">
@@ -114,6 +117,13 @@ export function Guarantee() {
                 Tu as donc 3 mois pour te lancer, tester et avancer avec ta boutique, avec notre accompagnement.
               </p>
             </div>
+          </div>
+        </Reveal>
+        <Reveal delay={150}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je me lance sans risque
+            </CtaButton>
           </div>
         </Reveal>
       </div>

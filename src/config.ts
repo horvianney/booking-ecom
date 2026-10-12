@@ -1,9 +1,9 @@
 // ============================================
 // CONFIGURATION BOOKING E-COM STARTER
 // CTA_URL = destination des boutons d'appel à l'action
-// ("#formulaire" = descend vers la section formulaire de la page)
+// Lien externe (https://…) = ouvert dans un nouvel onglet
 // ============================================
-export const CTA_URL = "#formulaire";
+export const CTA_URL = "https://pack-demarrage-rapide-e-commerce.mymaketou.shop/products/booking-ecom-starter/checkout";
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
 
@@ -28,9 +28,10 @@ export const PLACES_TOTAL = 20;
 // le compteur les ignore et ne compte que les NOUVELLES réservations.
 export const PLACES_COUNTER_OFFSET = 36;
 
-// Durée du compte à rebours affiché sur la page (en heures)
-// Quand il arrive à zéro, il recommence automatiquement.
-export const COUNTDOWN_HOURS = 3;
+// Durée du compte à rebours (en jours), individuelle par visiteur :
+// elle démarre à sa première visite et est mémorisée dans son navigateur.
+// Quand elle arrive à zéro, elle repart pour un nouveau cycle.
+export const COUNTDOWN_DAYS = 3;
 
 // ============================================
 // TÉMOIGNAGES (section photos)
@@ -65,6 +66,41 @@ export const TESTIMONIALS: {
     city: "Douala",
     text: "Le sourcing accompagné m'a évité des erreurs coûteuses avec les fournisseurs. Une équipe sérieuse, disponible, qui répond vite. Je recommande.",
     result: "Sourcing Chine réussi",
+    photo: null,
+  },
+  {
+    name: "Fatou D.",
+    city: "Dakar",
+    text: "J'avais déjà payé une formation à 250 000 FCFA sans jamais avoir de boutique. Ici, en 3 jours ma boutique était en ligne avec les produits. J'aurais dû commencer par là.",
+    result: "320 000 FCFA le 1ᵉʳ mois",
+    photo: null,
+  },
+  {
+    name: "Yao K.",
+    city: "Abidjan",
+    text: "Ce qui m'a bluffé, c'est le suivi. À chaque blocage, je pose ma question et on me répond dans la journée. On ne te lâche pas après le paiement, c'est rare.",
+    result: "15 commandes en 2 semaines",
+    photo: null,
+  },
+  {
+    name: "Aminata S.",
+    city: "Bamako",
+    text: "Je travaille à côté, donc je n'avais pas de temps à perdre sur la technique. Tout était prêt : design, pages, produits. Je me concentre uniquement sur la pub.",
+    result: "1ʳᵉ pub rentable en 10 jours",
+    photo: null,
+  },
+  {
+    name: "Kwame A.",
+    city: "Accra",
+    text: "Les visuels publicitaires fournis m'ont fait gagner un temps fou. J'ai lancé ma première campagne Facebook le week-end même de la livraison de ma boutique.",
+    result: "CA 6 chiffres en 30 jours",
+    photo: null,
+  },
+  {
+    name: "Mariam C.",
+    city: "Ouagadougou",
+    text: "La garantie 90 jours m'a décidée, je n'avais rien à perdre. Résultat : ma boutique tourne et j'ai récupéré mon investissement dès le premier mois.",
+    result: "Investissement remboursé en 1 mois",
     photo: null,
   },
 ];

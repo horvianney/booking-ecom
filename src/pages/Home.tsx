@@ -8,9 +8,9 @@ import { VideoSection } from "@/sections/VideoSection";
 import { WhoFor } from "@/sections/WhoFor";
 import { Testimonials } from "@/sections/Testimonials";
 import { VideoTestimonials } from "@/sections/VideoTestimonials";
-import { LeadForm } from "@/sections/LeadForm";
+// import { LeadForm } from "@/sections/LeadForm";
 import { FinalCta, Footer } from "@/sections/FinalCta";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+// import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { SocialProofToast } from "@/components/SocialProofToast";
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
       <StickyBar />
       <Hero />
       <VideoSection />
-      <LeadForm />
+      {/* <LeadForm /> */}
       <Pain />
       <Offer />
       <Steps />
@@ -47,7 +47,7 @@ export default function Home() {
       <Faq />
       <FinalCta />
       <Footer />
-      <WhatsAppFloat />
+      {/* <WhatsAppFloat /> */}
       <SocialProofToast />
     </main>
   );

@@ -47,7 +47,8 @@ function randomToast(): Toast {
 
 /**
  * Notifications de preuve sociale (simulées)  bas gauche.
- * Première apparition après 6 s, puis toutes les 10 s, visible 5 s.
+ * Première apparition après 1 min, puis à intervalle ALÉATOIRE entre
+ * 1 et 5 minutes (jamais moins d'1 minute), visible 5 s à chaque fois.
  */
 export function SocialProofToast() {
   const [toast, setToast] = useState<Toast | null>(null);
@@ -55,20 +56,21 @@ export function SocialProofToast() {
 
   useEffect(() => {
     let hideTimer: number;
+    let nextTimer: number;
 
     const show = () => {
       setToast(randomToast());
       setVisible(true);
       hideTimer = window.setTimeout(() => setVisible(false), 5000);
+      // Prochaine apparition : aléatoire entre 60 s et 300 s (1 à 5 min)
+      nextTimer = window.setTimeout(show, 60_000 + Math.random() * 240_000);
     };
 
-    const firstTimer = window.setTimeout(show, 6000);
-    const interval = window.setInterval(show, 10000);
+    nextTimer = window.setTimeout(show, 60_000);
 
     return () => {
-      window.clearTimeout(firstTimer);
+      window.clearTimeout(nextTimer);
       window.clearTimeout(hideTimer);
-      window.clearInterval(interval);
     };
   }, []);
 

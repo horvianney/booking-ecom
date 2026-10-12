@@ -1,3 +1,4 @@
+import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 
 const pourToi = [
@@ -60,6 +61,14 @@ export function WhoFor() {
                 ))}
               </ul>
             </div>
+          </div>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              C'est fait pour moi, je fonce
+            </CtaButton>
           </div>
         </Reveal>
       </div>

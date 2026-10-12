@@ -1,3 +1,4 @@
+import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 import { TESTIMONIALS } from "@/config";
 
@@ -75,6 +76,14 @@ export function Testimonials() {
             );
           })}
         </div>
+
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Moi aussi, je me lance
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

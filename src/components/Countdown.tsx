@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { COUNTDOWN_HOURS } from "@/config";
+import { COUNTDOWN_DAYS } from "@/config";
 
-const DURATION = COUNTDOWN_HOURS * 3_600_000;
+const DURATION = COUNTDOWN_DAYS * 86_400_000;
 const STORAGE_KEY = "bec_countdown_end";
 
 function pad(n: number) {
   return String(Math.max(n, 0)).padStart(2, "0");
 }
 
-// Deadline persistante : si absente ou dépassée, on repart pour COUNTDOWN_HOURS
+// Deadline persistante : si absente ou dépassée, on repart pour COUNTDOWN_DAYS
 function getDeadline(): number {
   const now = Date.now();
   try {
@@ -23,7 +23,7 @@ function getDeadline(): number {
 }
 
 /**
- * Compte à rebours de COUNTDOWN_HOURS heures (config.ts).
+ * Compte à rebours de COUNTDOWN_DAYS jours (config.ts), individuel par visiteur.
  * Quand il arrive à zéro, il recommence automatiquement.
  */
 export function Countdown({ className = "" }: { className?: string }) {
@@ -46,12 +46,14 @@ export function Countdown({ className = "" }: { className?: string }) {
     return () => window.clearInterval(t);
   }, []);
 
-  const h = Math.floor(left / 3_600_000);
+  const j = Math.floor(left / 86_400_000);
+  const h = Math.floor((left % 86_400_000) / 3_600_000);
   const m = Math.floor((left % 3_600_000) / 60_000);
   const s = Math.floor((left % 60_000) / 1_000);
   const urgent = left < 600_000; // moins de 10 min : rouge vif + pulsation
 
   const units = [
+    { v: pad(j), label: "Jours" },
     { v: pad(h), label: "Heures" },
     { v: pad(m), label: "Min" },
     { v: pad(s), label: "Sec" },
@@ -59,7 +61,7 @@ export function Countdown({ className = "" }: { className?: string }) {
 
   return (
     <div className={`flex flex-col items-center gap-3 ${className}`}>
-      <p className="font-advent text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400">
+      <p className="font-advent text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400">
         ⏳ Ton prix de lancement est réservé pendant :
       </p>
       <div className="flex gap-2 sm:gap-3">

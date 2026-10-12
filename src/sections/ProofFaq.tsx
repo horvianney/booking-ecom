@@ -1,3 +1,4 @@
+import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 import capture01 from "@/assets/capture01.png";
 import capture02 from "@/assets/capture02.png";
@@ -36,7 +37,7 @@ const faqs = [
   },
   {
     q: "Les produits sont-ils inclus dans la boutique ?",
-    a: "Oui. Ta boutique arrive avec plus de + de 10 produits gagnants déjà ajoutés et les pages optimisées pour vendre.",
+    a: "Oui. Ta boutique arrive avec plus de + de 10 produits qui marchent déjà ajoutés et les pages optimisées pour vendre.",
   },
   {
     q: "Combien de temps dure l'accompagnement ?",
@@ -85,6 +86,13 @@ export function Proof() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je veux les mêmes résultats
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

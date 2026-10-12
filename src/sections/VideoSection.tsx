@@ -128,7 +128,7 @@ export function VideoSection() {
     >
       <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-[#b3001b]/15 blur-[130px]" />
       <div className="relative mx-auto max-w-4xl px-4">
-        <Reveal>
+        {/* <Reveal>
           <p className="font-advent text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#fac9b8]">
             Regarde avant de décider
           </p>
@@ -140,28 +140,16 @@ export function VideoSection() {
           </p>
           <div className="mx-auto mt-6 max-w-2xl rounded-xl border border-[#e10a17]/40 bg-[#b3001b]/10 px-5 py-4 text-center">
             <p className="text-sm leading-relaxed text-neutral-200 sm:text-base">
-              Boutique Shopify brandée, + de 10 produits gagnants, formation
+              Boutique Shopify brandée, + de 10 produits qui marchent, formation
               complète et 3 mois d'accompagnement pour{" "}
               <strong className="text-white">29 900 FCFA</strong> au lieu de{" "}
               <span className="line-through decoration-[#e10a17]">550 000 FCFA</span>.
               {" "}Garantie 90 jours, zéro risque.
             </p>
           </div>
-        </Reveal>
+        </Reveal> */}
 
         <Reveal delay={100}>
-          <div className="relative mx-auto mt-8 max-w-3xl">
-            <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_40%,rgba(179,0,27,0.25),transparent_65%)] blur-xl" />
-            <img
-              src={promoVideo}
-              alt="Saisis l'offre unique maintenant : 29 900 XOF au lieu de 550 000 XOF, offre limitée à 20 places, économisez 520 000 XOF"
-              className="relative w-full rounded-2xl border border-white/10 object-cover shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]"
-              loading="lazy"
-            />
-          </div>
-        </Reveal>
-
-        <Reveal delay={150}>
           <div className="relative mx-auto mt-10 max-w-3xl">
             <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_40%,rgba(179,0,27,0.25),transparent_65%)] blur-xl" />
             <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
@@ -206,12 +194,24 @@ export function VideoSection() {
           </div>
         </Reveal>
 
-        <Reveal delay={250}>
+        <Reveal delay={150}>
           <div className="mt-8 flex flex-col items-center gap-6">
             <Countdown />
             <CtaButton className="w-full sm:w-auto sm:px-10">
               Je réserve ma place maintenant
             </CtaButton>
+          </div>
+        </Reveal>
+
+        <Reveal delay={250}>
+          <div className="relative mx-auto mt-8 max-w-3xl">
+            <div className="pointer-events-none absolute -inset-4 rounded-3xl bg-[radial-gradient(circle_at_50%_40%,rgba(179,0,27,0.25),transparent_65%)] blur-xl" />
+            <img
+              src={promoVideo}
+              alt="Saisis l'offre unique maintenant : 29 900 XOF au lieu de 550 000 XOF, offre limitée à 20 places, économisez 520 000 XOF"
+              className="relative w-full rounded-2xl border border-white/10 object-cover shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]"
+              loading="lazy"
+            />
           </div>
         </Reveal>
       </div>
