@@ -20,12 +20,15 @@ export function Price() {
       <div className="relative mx-auto max-w-3xl px-4">
         <Reveal>
           <p className="font-advent text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#fac9b8]">
-            Combien ça vaut
+            Prix et valeur
           </p>
           <h2 className="font-display mt-4 text-center text-3xl uppercase sm:text-4xl">
-            Tout ce que tu reçois{" "}
-            <span className="text-brand-gradient">aujourd'hui</span>
+            La vraie valeur de{" "}
+            <span className="text-brand-gradient">ton pack</span>
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-400">
+            Ce n'est pas ce que tu paies qui compte, c'est ce que tu obtiens.
+          </p>
         </Reveal>
 
         <Reveal delay={60}>
@@ -46,7 +49,7 @@ export function Price() {
           <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-[#0e0e0e] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)]">
             <div className="bg-brand-gradient px-6 py-4">
               <p className="font-display text-center text-sm uppercase tracking-widest text-white">
-                Booking E-com Starter  Accès complet
+                Ce qui est inclus
               </p>
             </div>
             <div className="divide-y divide-white/5 px-6">
@@ -77,6 +80,9 @@ export function Price() {
               <p className="font-display mt-3 text-5xl text-peach sm:text-6xl">
                 29 900 <span className="text-2xl">FCFA</span>
               </p>
+              <p className="font-display mt-2 text-lg uppercase text-[#6bd425] sm:text-xl">
+                Tu économises 520 100 FCFA
+              </p>
               <p className="font-advent mt-2 text-xs font-medium uppercase tracking-[0.2em] text-[#e10a17]">
                 Prix de lancement  peut augmenter à tout moment
               </p>
@@ -85,7 +91,7 @@ export function Price() {
               </div>
               <Countdown className="mt-5" />
               <CtaButton className="mt-5 w-full sm:w-auto">
-                Oui, je veux ma boutique maintenant
+                Je profite de l'offre maintenant
               </CtaButton>
               <p className="font-advent mt-4 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500">
                 Mixx by Yas · Flooz · Autres moyens locaux · Garantie 90 jours
@@ -122,7 +128,7 @@ export function Guarantee() {
         <Reveal delay={150}>
           <div className="mt-10 flex justify-center">
             <CtaButton className="w-full sm:w-auto sm:px-10">
-              Je me lance sans risque
+              Je me lance maintenant
             </CtaButton>
           </div>
         </Reveal>

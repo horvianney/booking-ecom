@@ -26,7 +26,13 @@ function getDeadline(): number {
  * Compte à rebours de COUNTDOWN_DAYS jours (config.ts), individuel par visiteur.
  * Quand il arrive à zéro, il recommence automatiquement.
  */
-export function Countdown({ className = "" }: { className?: string }) {
+export function Countdown({
+  className = "",
+  label = "⏳ Ton prix de lancement est réservé pendant :",
+}: {
+  className?: string;
+  label?: string;
+}) {
   const [left, setLeft] = useState(() => getDeadline() - Date.now());
 
   useEffect(() => {
@@ -62,7 +68,7 @@ export function Countdown({ className = "" }: { className?: string }) {
   return (
     <div className={`flex flex-col items-center gap-3 ${className}`}>
       <p className="font-advent text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-400">
-        ⏳ Ton prix de lancement est réservé pendant :
+        {label}
       </p>
       <div className="flex gap-2 sm:gap-3">
         {units.map((u) => (

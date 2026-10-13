@@ -34,7 +34,7 @@ export function StickyBar() {
             </p>
             {/* Compteur de places  visible en permanence */}
             <a
-              href="https://pack-demarrage-rapide-e-commerce.mymaketou.shop/products/booking-ecom-starter/checkout"
+              href="https://hub-5.mymaketou.shop/products/hub-site/checkout"
               className="flex shrink-0 items-center gap-1.5 rounded-full border border-[#e10a17]/50 bg-[#b3001b]/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-[#fac9b8] transition hover:bg-[#b3001b]/30 sm:px-3 sm:text-[11px]"
             >
               <span className="relative flex h-2 w-2">

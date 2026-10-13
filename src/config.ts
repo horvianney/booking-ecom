@@ -3,7 +3,7 @@
 // CTA_URL = destination des boutons d'appel à l'action
 // Lien externe (https://…) = ouvert dans un nouvel onglet
 // ============================================
-export const CTA_URL = "https://pack-demarrage-rapide-e-commerce.mymaketou.shop/products/booking-ecom-starter/checkout";
+export const CTA_URL = "https://hub-5.mymaketou.shop/products/hub-site/checkout";
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
 

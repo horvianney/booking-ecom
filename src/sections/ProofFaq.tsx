@@ -20,11 +20,19 @@ const captures = [
 
 const faqs = [
   {
-    q: "Je ne sais pas créer une boutique, ça marche pour moi ?",
-    a: "Oui. Tu n'as rien à configurer toi-même : tu nous envoies ta boutique (ou on t'aide à la créer si tu n'en as pas), et on s'occupe de tout le reste.",
+    q: "Est-ce que ça fonctionne vraiment ?",
+    a: "Oui. Les captures de cette page sont des ventes réelles générées avec la même méthode que celle qu'on installe dans ta boutique. Et tu es couvert par la garantie 90 jours : si tu ne réalises aucune vente, tu peux demander le remboursement.",
   },
   {
-    q: "En combien de temps je reçois ma boutique ?",
+    q: "Et si je n'arrive pas à vendre ?",
+    a: "Tu as 90 jours pour te lancer, tester et avancer avec notre accompagnement. Si dans ce délai tu n'as réalisé aucune vente, tu peux demander le remboursement de ton achat selon les conditions de la garantie. Zéro risque.",
+  },
+  {
+    q: "Je n'ai jamais fait d'e-commerce, c'est pour moi ?",
+    a: "Oui. Tu n'as rien à configurer toi-même : ta boutique arrive prête, avec les produits et les pages optimisées. La formation et l'accompagnement te guident pas à pas, même en partant de zéro.",
+  },
+  {
+    q: "Combien de temps pour recevoir ma boutique ?",
     a: "En général sous 24 à 72h après la confirmation de ta commande, selon le nombre de commandes en cours.",
   },
   {
@@ -32,20 +40,8 @@ const faqs = [
     a: "Via les moyens de paiement locaux : Mixx by Yas, Flooz, ou tout autre moyen disponible dans ton pays. On t'envoie les détails de paiement dès ta commande.",
   },
   {
-    q: "Et si je ne suis pas satisfait ?",
-    a: "Tu as 90 jours pour demander un remboursement intégral, sans justification. Zéro risque.",
-  },
-  {
-    q: "Les produits sont-ils inclus dans la boutique ?",
-    a: "Oui. Ta boutique arrive avec plus de + de 10 produits qui marchent déjà ajoutés et les pages optimisées pour vendre.",
-  },
-  {
-    q: "Combien de temps dure l'accompagnement ?",
-    a: "3 mois complets : 2 lives de formation et de suivi par semaine (Google Meet), plus un support disponible 7j/7 pour t'aider à surmonter tes blocages  du sourcing jusqu'à ton premier lancement publicitaire.",
-  },
-  {
-    q: "Je n'y connais rien au sourcing, vous m'aidez ?",
-    a: "Oui. On t'accompagne sur ton premier sourcing avec nos experts logistique, que ce soit localement ou en Chine.",
+    q: "Qu'est-ce qui est inclus dans l'accompagnement ?",
+    a: "3 mois complets : 2 lives de formation et de suivi par semaine (Google Meet), plus un support disponible 7j/7 pour t'aider à surmonter tes blocages jusqu'à tes premières ventes.",
   },
 ];
 
@@ -89,7 +85,7 @@ export function Proof() {
         <Reveal delay={200}>
           <div className="mt-10 flex justify-center">
             <CtaButton className="w-full sm:w-auto sm:px-10">
-              Je veux les mêmes résultats
+              Je suis prêt à obtenir ma boutique
             </CtaButton>
           </div>
         </Reveal>
@@ -107,7 +103,7 @@ export function Faq() {
             Questions fréquentes
           </p>
           <h2 className="font-display mt-4 text-center text-3xl uppercase sm:text-4xl">
-            Ce que tu te demandes encore
+            Tes <span className="text-brand-gradient">questions</span>, nos réponses
           </h2>
         </Reveal>
         <div className="mt-10 space-y-3">
@@ -127,6 +123,13 @@ export function Faq() {
             </Reveal>
           ))}
         </div>
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <CtaButton className="w-full sm:w-auto sm:px-10">
+              Je profite de l'offre maintenant
+            </CtaButton>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

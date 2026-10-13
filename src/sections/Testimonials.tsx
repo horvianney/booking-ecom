@@ -23,11 +23,10 @@ export function Testimonials() {
             Témoignages
           </p>
           <h2 className="font-display mt-4 text-center text-3xl uppercase sm:text-4xl">
-            Ils ont lancé <span className="text-brand-gradient">leur boutique</span>
+            Ils ont obtenu des <span className="text-brand-gradient">résultats concrets</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-400">
-            Des débutants comme toi, qui vendent aujourd'hui avec leur boutique
-            Booking E-com Starter.
+            Voici ce que disent les clients.
           </p>
         </Reveal>
 
@@ -80,7 +79,7 @@ export function Testimonials() {
         <Reveal delay={200}>
           <div className="mt-10 flex justify-center">
             <CtaButton className="w-full sm:w-auto sm:px-10">
-              Moi aussi, je me lance
+              Je me lance maintenant
             </CtaButton>
           </div>
         </Reveal>

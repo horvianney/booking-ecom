@@ -2,9 +2,12 @@ import { CtaButton } from "@/components/CtaButton";
 import { Reveal } from "@/components/Reveal";
 
 const pains = [
-  "Tu as payé des formations chères… et tu n'as toujours pas de boutique en ligne.",
-  "Tu as perdu des semaines sur Shopify, et ta boutique n'est toujours pas prête.",
-  "Tu as les idées, l'envie, l'ambition  mais la technique te bloque à chaque étape.",
+  "Tu manques de connaissances en e-commerce",
+  "Tu n'as pas le temps de tout gérer",
+  "Tu ne sais pas créer ta boutique",
+  "Tu ne trouves pas les bons produits",
+  "Tu n'arrives pas à obtenir tes premières ventes",
+  "Tu manques d'accompagnement",
 ];
 
 const offer = [
@@ -24,19 +27,19 @@ const offer = [
     desc: "Le fonctionnement réel de l'e-commerce en Afrique, expliqué pas à pas. Pas de théorie inutile : que du terrain.",
   },
   {
-    icon: "📦",
-    title: "Sourcing accompagné",
-    desc: "On t'accompagne sur ton premier sourcing, avec l'appui de nos experts logistique  localement ou en Chine.",
-  },
-  {
-    icon: "🚀",
-    title: "Premier lancement pub accompagné",
-    desc: "Visuels publicitaires prêts à l'emploi + accompagnement sur ta première campagne Facebook pour maximiser tes chances.",
-  },
-  {
     icon: "🤝",
     title: "3 mois d'accompagnement",
-    desc: "2 lives de formation et de suivi par semaine (Google Meet) + support disponible 7j/7. On te suit jusqu'aux résultats.",
+    desc: "Un suivi pour passer à l'action et avancer sans rester seul.",
+  },
+  {
+    icon: "🎥",
+    title: "2 lives par semaine",
+    desc: "Questions et conseils en direct avec l'équipe.",
+  },
+  {
+    icon: "💬",
+    title: "Support 7j/7",
+    desc: "Une équipe disponible chaque jour pour te répondre.",
   },
 ];
 
@@ -68,13 +71,16 @@ export function Pain() {
             Le vrai problème
           </p>
           <h2 className="font-display mt-4 text-center text-3xl uppercase sm:text-4xl">
-            Tu reconnais ça ?
+            Tu te <span className="text-brand-gradient">reconnais</span> ?
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-400">
+            Voici ce que tu vis peut-être aujourd'hui.
+          </p>
         </Reveal>
-        <div className="mt-10 space-y-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {pains.map((p, i) => (
-            <Reveal key={i} delay={i * 100}>
-              <div className="flex items-start gap-4 rounded-xl border border-white/10 bg-black/60 p-5">
+            <Reveal key={i} delay={i * 80}>
+              <div className="flex h-full flex-col items-center gap-3 rounded-xl border border-white/10 bg-black/60 p-5 text-center">
                 <span className="font-display text-xl text-[#e10a17]">✗</span>
                 <p className="text-neutral-300">{p}</p>
               </div>
@@ -84,20 +90,15 @@ export function Pain() {
         <Reveal delay={300}>
           <div className="mt-8 rounded-xl border border-[#e10a17]/40 bg-[#b3001b]/10 p-6 text-center">
             <p className="font-display text-lg uppercase text-white sm:text-xl">
-              Résultat : tu stagnes…{" "}
-              <span className="text-[#e10a17]">
-                pendant que d'autres vendent chaque semaine.
-              </span>
-            </p>
-            <p className="font-advent mt-2 text-sm font-medium tracking-wide text-neutral-400">
-              Il est temps de faire différemment.
+              Si tu es dans ce cas,{" "}
+              <span className="text-[#e10a17]">cette solution est pour toi.</span>
             </p>
           </div>
         </Reveal>
         <Reveal delay={350}>
           <div className="mt-10 flex justify-center">
             <CtaButton className="w-full sm:w-auto sm:px-10">
-              Je passe à l'action maintenant
+              Je suis prêt à obtenir ma boutique
             </CtaButton>
           </div>
         </Reveal>
@@ -127,11 +128,11 @@ export function Offer() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {offer.map((o, i) => (
             <Reveal key={i} delay={i * 120}>
-              <div className="group relative h-full rounded-2xl border border-white/10 bg-[#101010] p-7 transition duration-300 hover:-translate-y-1.5 hover:border-[#6bd425]/50 hover:shadow-[0_20px_60px_-15px_rgba(107,212,37,0.25)]">
+              <div className="group relative h-full rounded-2xl border border-white/10 bg-[#101010] p-7 text-center transition duration-300 hover:-translate-y-1.5 hover:border-[#6bd425]/50 hover:shadow-[0_20px_60px_-15px_rgba(107,212,37,0.25)]">
                 <span className="font-display absolute right-5 top-4 text-xl text-white/15 transition group-hover:text-[#6bd425]/50">
                   0{i + 1}
                 </span>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#b3001b]/20 text-2xl ring-1 ring-[#e10a17]/40">
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#b3001b]/20 text-2xl ring-1 ring-[#e10a17]/40">
                   {o.icon}
                 </div>
                 <h3 className="font-display mt-5 text-lg uppercase leading-snug">
@@ -147,7 +148,7 @@ export function Offer() {
         <Reveal delay={200}>
           <div className="mt-10 flex justify-center">
             <CtaButton className="w-full sm:w-auto sm:px-10">
-              Oui, je veux tout ça à 29 900 FCFA
+              Je me lance maintenant
             </CtaButton>
           </div>
         </Reveal>
