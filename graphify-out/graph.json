@@ -1,0 +1,180 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "App",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_app_app",
+      "community": 15,
+      "norm_label": "app"
+    },
+    {
+      "label": "Countdown",
+      "file_type": "code",
+      "source_file": "src/components/Countdown.tsx",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "components_countdown_countdown",
+      "community": 0,
+      "norm_label": "countdown"
+    },
+    {
+      "label": "CtaButton",
+      "file_type": "code",
+      "source_file": "src/components/CtaButton.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_ctabutton_ctabutton",
+      "community": 1,
+      "norm_label": "ctabutton"
+    },
+    {
+      "label": "StickyBar",
+      "file_type": "code",
+      "source_file": "src/components/Navbar.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "components_navbar_stickybar",
+      "community": 2,
+      "norm_label": "stickybar"
+    },
+    {
+      "label": "usePlacesRestantes",
+      "file_type": "code",
+      "source_file": "src/components/PlacesBadge.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "components_placesbadge_useplacesrestantes",
+      "community": 4,
+      "norm_label": "useplacesrestantes"
+    },
+    {
+      "label": "PlacesBadge",
+      "file_type": "code",
+      "source_file": "src/components/PlacesBadge.tsx",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "components_placesbadge_placesbadge",
+      "community": 3,
+      "norm_label": "placesbadge"
+    },
+    {
+      "label": "Reveal",
+      "file_type": "code",
+      "source_file": "src/components/Reveal.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_reveal_reveal",
+      "community": 5,
+      "norm_label": "reveal"
+    },
+    {
+      "label": "SocialProofToast",
+      "file_type": "code",
+      "source_file": "src/components/SocialProofToast.tsx",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "components_socialprooftoast_socialprooftoast",
+      "community": 6,
+      "norm_label": "socialprooftoast"
+    },
+    {
+      "label": "WhatsAppFloat",
+      "file_type": "code",
+      "source_file": "src/components/WhatsAppFloat.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "components_whatsappfloat_whatsappfloat",
+      "community": 7,
+      "norm_label": "whatsappfloat"
+    },
+    {
+      "label": "ChartConfig",
+      "file_type": "code",
+      "source_file": "src/components/ui/chart.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "ui_chart_chartconfig",
+      "community": 16,
+      "norm_label": "chartconfig"
+    },
+    {
+      "label": "useIsMobile",
+      "file_type": "code",
+      "source_file": "src/hooks/use-mobile.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "hooks_use_mobile_useismobile",
+      "community": 8,
+      "norm_label": "useismobile"
+    },
+    {
+      "label": "cn",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "lib_utils_cn",
+      "community": 9,
+      "norm_label": "cn"
+    },
+    {
+      "label": "PolitiqueConfidentialite",
+      "file_type": "code",
+      "source_file": "src/pages/PolitiqueConfidentialite.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "pages_politiqueconfidentialite_politiqueconfidentialite",
+      "community": 10,
+      "norm_label": "politiqueconfidentialite"
+    },
+    {
+      "label": "FinalCta",
+      "file_type": "code",
+      "source_file": "src/sections/FinalCta.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "sections_finalcta_finalcta",
+      "community": 11,
+      "norm_label": "finalcta"
+    },
+    {
+      "label": "Footer",
+      "file_type": "code",
+      "source_file": "src/sections/FinalCta.tsx",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "sections_finalcta_footer",
+      "community": 12,
+      "norm_label": "footer"
+    },
+    {
+      "label": "Hero",
+      "file_type": "code",
+      "source_file": "src/sections/Hero.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "sections_hero_hero",
+      "community": 13,
+      "norm_label": "hero"
+    },
+    {
+      "label": "Price",
+      "file_type": "code",
+      "source_file": "src/sections/PriceGuarantee.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "sections_priceguarantee_price",
+      "community": 14,
+      "norm_label": "price"
+    }
+  ],
+  "links": [],
+  "hyperedges": [],
+  "built_at_commit": "4164867ebd2e5b43dc12f3a7d5d6eecc1ce25802"
+}
