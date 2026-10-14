@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Fichiers de travail locaux (ne pas committer)
+graphify-out/
+wireframe-*.html
+analyze_wireframe.py
+wireframe-structure.txt
