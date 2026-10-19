@@ -1,6 +1,7 @@
 # CLAUDE.md — Booking E-com Starter (landing page)
 
 > Document de passation. Claude Code : lis ce fichier en entier avant toute modification.
+> Kimi Code lit `AGENTS.md` : les deux fichiers ont le même contenu — **en modifier un = mettre l'autre à jour**.
 
 ## Vue d'ensemble
 
