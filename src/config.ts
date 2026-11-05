@@ -3,13 +3,13 @@
 // CTA_URL = destination des boutons d'appel à l'action
 // Lien externe (https://…) = ouvert dans un nouvel onglet
 // ============================================
-export const CTA_URL = "https://pack-demarrage-rapide-e-commerce.mymaketou.shop/products/booking-ecom-starter/checkout";
+export const CTA_URL = "https://wa.me/22872581083";
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
 
-// Numéro WhatsApp qui reçoit les réservations du formulaire (format international, sans + ni espaces)
+// Numéro WhatsApp qui reçoit les réservations (format international, sans + ni espaces)
 // Exemple Togo : "22890123456"
-export const WHATSAPP_NUMBER = "33745458435";
+export const WHATSAPP_NUMBER = "22872581083";
 
 // ID de la vidéo YouTube à intégrer sur la page (la partie après watch?v=)
 // Vide = la section vidéo ne s'affiche pas

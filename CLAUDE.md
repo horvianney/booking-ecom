@@ -23,7 +23,7 @@ Toute la configuration métier est centralisée là — **toujours passer par ce
 
 | Constante | Rôle |
 |---|---|
-| `CTA_URL` | Destination de tous les boutons CTA (actuellement checkout `hub-5.mymaketou.shop/...`) |
+| `CTA_URL` | Destination de tous les boutons CTA (actuellement WhatsApp `wa.me/22872581083`) |
 | `WHATSAPP_NUMBER` | Numéro WhatsApp (format international sans + ni espaces) |
 | `YOUTUBE_VIDEO_ID` | ID de la VSL YouTube (autoplay au scroll, via IFrame API) |
 | `GOOGLE_SHEET_WEBAPP_URL` | Apps Script qui écrit les leads du formulaire dans Google Sheets + endpoint GET `{count}` pour le compteur de places |
