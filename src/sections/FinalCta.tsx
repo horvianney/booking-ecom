@@ -35,7 +35,7 @@ export function FinalCta() {
             </CtaButton>
           </div>
           <p className="font-advent mt-5 text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500">
-            ⚡ Livraison rapide · 🛡 Garantie 90 jours · 🤝 Support inclus
+            ⚡ Acces rapide · 🛡 Garantie 90 jours · 🤝 Support inclus
           </p>
         </Reveal>
       </div>
@@ -54,8 +54,11 @@ export function Footer() {
             className="h-9 w-auto object-contain opacity-90"
           />
         </div>
-        <div className="flex items-center gap-6 text-xs text-neutral-500">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-neutral-500">
           <span>© 2026 Booking E-com  Tous droits réservés</span>
+          <a href="mailto:bookingagcy@gmail.com" className="hover:text-neutral-400 transition-colors">
+            Contact : bookingagcy@gmail.com
+          </a>
           <Link to="/politique-confidentialite" className="hover:text-neutral-400 transition-colors">
             Politique de confidentialité
           </Link>

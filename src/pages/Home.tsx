@@ -53,7 +53,7 @@ export default function Home() {
       <Faq />
       {/* Garantie 90 jours */}
       <Guarantee />
-      {/* Formulaire exclu : les CTA ouvrent directement le checkout */}
+      {/* Formulaire exclu : les CTA ouvrent directement WhatsApp */}
       {/* <LeadForm /> */}
       <Footer />
       {/* Bouton WhatsApp flottant exclu */}

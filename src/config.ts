@@ -3,13 +3,26 @@
 // CTA_URL = destination des boutons d'appel à l'action
 // Lien externe (https://…) = ouvert dans un nouvel onglet
 // ============================================
-export const CTA_URL = "https://pack-demarrage-rapide-e-commerce.mymaketou.shop/products/booking-ecom-starter/checkout";
+// Numéro WhatsApp qui reçoit les réservations (format international, sans + ni espaces)
+// Exemple Togo : "22890123456"
+export const WHATSAPP_NUMBER = "22872581083";
+
+const WHATSAPP_MESSAGE = `Prénom :
+Adresse e-mail :
+
+Bonjour ! 👋
+
+*Je veux procéder au paiement du Pack Démarrage Rapide E-commerce (29 900 FCFA) pour lancer ma boutique dès que possible* 🚀
+
+Je n'ai pas de compétences actuellement et je compte sur votre offre pour me lancer aujourd'hui et avoir des résultats rapidement 💪
+
+Quelles sont les procédures de paiement ? 💳 Je reste disponible pour un appel dans les 8 prochaines heures 📞
+
+Merci pour votre retour 🙏`;
+
+export const CTA_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export const CTA_LABEL = "RÉSERVER MA PLACE MAINTENANT";
-
-// Numéro WhatsApp qui reçoit les réservations du formulaire (format international, sans + ni espaces)
-// Exemple Togo : "22890123456"
-export const WHATSAPP_NUMBER = "33745458435";
 
 // ID de la vidéo YouTube à intégrer sur la page (la partie après watch?v=)
 // Vide = la section vidéo ne s'affiche pas
